@@ -1,0 +1,39 @@
+{
+  "name": "mephistools-sniffer",
+  "version": "1.0.0",
+  "description": "Sniff Diablo 2 packets",
+  "main": "index.js",
+  "dependencies": {
+    "diablo2-protocol": "^1.4.1",
+    "pcap": "^2.1.0",
+    "protodef": "^1.8.2",
+    "ws": "^6.1.2"
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "pretest": "npm run lint && require-self",
+    "prepare": "npm install require-self && require-self",
+    "lint": "standard",
+    "fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mephistools/mephistools-sniffer.git"
+  },
+  "keywords": [
+    "mephistools",
+    "template"
+  ],
+  "author": "Louis Beaumont",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mephistools/mephistools-sniffer/issues"
+  },
+  "homepage": "https://github.com/Mephistools/mephistools-sniffer#readme",
+  "devDependencies": {
+    "diablo2-protocol": "file:../diablo2-protocol",
+    "jest": "^26.1.0",
+    "require-self": "^0.2.3",
+    "standard": "^14.3.4"
+  }
+}
