@@ -7,9 +7,9 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![NPM version](https://img.shields.io/npm/v/mephistools-sniffer.svg)](http://npmjs.com/package/mephistools-sniffer)
-[![Build Status](https://github.com/Mephistools/mephistools-sniffer/workflows/CI/badge.svg)](https://github.com/Mephistools/mephistools-sniffer/actions?query=workflow%3A%22CI%22)
-[![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](https://discord.gg/9RqtApv)
+[![NPM version](https://img.shields.io/npm/v/mephistools-template.svg)](npm-url)
+[![Build Status](https://github.com/Mephistools/mephistools-template/workflows/CI/badge.svg)](build-url)
+[![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](discord-url)
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -56,8 +56,34 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
+```bash
+npm i mephistools-sniffer
+```
+
 <!-- USAGE EXAMPLES -->
 ## Usage
+
+```js
+const { listen } = require('mephistools-sniffer')
+const sniffer = listen('my-network-interface', 'my-diablo2-version')
+sniffer.on('inData', message => {
+  console.log(`Incoming low level message: ${JSON.stringify(message)}`)
+})
+sniffer.on('outData', message => {
+  console.log(`Outgoing low level message: ${JSON.stringify(message)}`)
+})
+
+sniffer.on('error', err => {
+  console.log(`Error: ${JSON.stringify(err)}`)
+})
+```
+
+Or run the example
+
+```bash
+# Requires sudo because pcap you know ...
+sudo node examples/basic.js my-network-interface my-diablo2-version
+```
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -100,3 +126,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-url]: https://github.com/Mephistools/mephistools-sniffer/issues
 [license-shield]: https://img.shields.io/github/license/Mephistools/mephistools-sniffer.svg?style=flat-square
 [license-url]: https://github.com/Mephistools/mephistools-sniffer/blob/master/LICENSE.txt
+[npm-shield]: https://img.shields.io/npm/v/mephistools-template.svg
+[npm-url]: http://npmjs.com/package/mephistools-template
+[build-shield]: https://github.com/Mephistools/mephistools-template/workflows/CI/badge.svg
+[build-url]: https://github.com/Mephistools/mephistools-template/actions?query=workflow%3A%22CI%22
+[discord-shield]: https://img.shields.io/badge/chat-on%20discord-brightgreen.svg
+[discord-url]: https://discord.gg/9RqtApv
