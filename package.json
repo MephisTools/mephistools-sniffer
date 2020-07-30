@@ -4,7 +4,6 @@
   "description": "Sniff Diablo 2 packets",
   "main": "index.js",
   "dependencies": {
-    "diablo2-protocol": "^1.4.1",
     "pcap": "^2.1.0",
     "protodef": "^1.8.2",
     "ws": "^6.1.2"
