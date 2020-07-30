@@ -7,8 +7,8 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![NPM version](https://img.shields.io/npm/v/mephistools-template.svg)](npm-url)
-[![Build Status](https://github.com/Mephistools/mephistools-template/workflows/CI/badge.svg)](build-url)
+[![NPM version](https://img.shields.io/npm/v/mephistools-sniffer.svg)](npm-url)
+[![Build Status](https://github.com/Mephistools/mephistools-sniffer/workflows/CI/badge.svg)](build-url)
 [![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](discord-url)
 
 <!-- TABLE OF CONTENTS -->
@@ -126,9 +126,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-url]: https://github.com/Mephistools/mephistools-sniffer/issues
 [license-shield]: https://img.shields.io/github/license/Mephistools/mephistools-sniffer.svg?style=flat-square
 [license-url]: https://github.com/Mephistools/mephistools-sniffer/blob/master/LICENSE.txt
-[npm-shield]: https://img.shields.io/npm/v/mephistools-template.svg
-[npm-url]: http://npmjs.com/package/mephistools-template
-[build-shield]: https://github.com/Mephistools/mephistools-template/workflows/CI/badge.svg
-[build-url]: https://github.com/Mephistools/mephistools-template/actions?query=workflow%3A%22CI%22
+[npm-shield]: https://img.shields.io/npm/v/mephistools-sniffer.svg
+[npm-url]: http://npmjs.com/package/mephistools-sniffer
+[build-shield]: https://github.com/Mephistools/mephistools-sniffer/workflows/CI/badge.svg
+[build-url]: https://github.com/Mephistools/mephistools-sniffer/actions?query=workflow%3A%22CI%22
 [discord-shield]: https://img.shields.io/badge/chat-on%20discord-brightgreen.svg
 [discord-url]: https://discord.gg/9RqtApv
